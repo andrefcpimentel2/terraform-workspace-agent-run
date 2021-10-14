@@ -19,6 +19,7 @@ module "agents" {
   source  = "./modules/agent"
   # insert required variables here
   TFC_AGENT_TOKEN = tfe_agent_token.agent-token.token
+  ssh_public_key = var.ssh_public_key
 }
 
 output "agents" {

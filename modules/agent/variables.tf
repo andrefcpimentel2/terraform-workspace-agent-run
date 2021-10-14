@@ -80,7 +80,6 @@ default = "t2.large"
 
 variable "ssh_public_key" {
     description = "The contents of the SSH public key to use for connecting to the cluster."
-    default = "~/.ssh/id_rsa.pub"
 }
 
 

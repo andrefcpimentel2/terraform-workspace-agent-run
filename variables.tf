@@ -33,3 +33,6 @@ description = "Hours after which resource expires, used by reaper. Do not use an
 default = "240"
 }
 
+variable "ssh_public_key" {
+    description = "The contents of the SSH public key to use for connecting to the cluster."
+}

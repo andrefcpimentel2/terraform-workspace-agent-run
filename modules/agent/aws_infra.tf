@@ -87,7 +87,7 @@ resource "aws_security_group" "agent_sg" {
 
 resource "aws_key_pair" "deployer" {
   key_name   = "${var.namespace}-${var.owner}"
-  public_key = file(var.ssh_public_key)
+  public_key = var.ssh_public_key
 }
 
 
